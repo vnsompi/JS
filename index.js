@@ -95,3 +95,93 @@ total += 1; // addition avec affectation
 total -= 1; // soustraction avec affectation
 total--; // soustraction de 1
 console.log(total);
+
+//  let x = 10;
+//  let y = 5+5;
+
+// //  une if  else en ligne  
+//  if(x > y) {alert("x est plus grand que y");{}
+
+//  }else if (y==x) {alert("ils sont egaux");}
+
+// //  pour complexifier les consdition on peut utiliser les operateurs logiques
+// // && (et), || (ou), ! (non)
+
+
+// on test si ma variable est true ou fausse
+
+    // if (x){
+        // console.log("x existe!")
+
+    // les egalites
+
+     let x = 10;
+    let y = "10";
+    if (x == y) {
+        console.log("ils sont egaux");
+    }
+
+    // pour tester les egalités il faut utlisiser ===  
+   
+    if (x === y){
+        console.log("ils sont egaux et de meme type");
+    } else {
+        console.log("ils ne sont pas egaux ou de meme type");
+    }
+
+    // ==teste iil teste l'egalite de s valeurs sans prendre compte de type 
+
+
+// le ou
+// if (x == y || x === y) {
+//     console.log("x est egale à y");
+// }
+
+if (x> y  || x > 1) {
+    console.log("x est plus grand que y ou x est egale à y");
+} else {
+    // alert("alerte Erreur");
+}
+// && est l'operateur logique ET qui teste si les deux conditions sont vraies sans quoi im ne s'execute pas 
+
+let a = 2 
+let b = "2";
+if(a < b && a > 1) {
+    console.log("ui");
+} else{
+    // alert("une erreur est commise");
+}
+
+// les fonctions
+// fonction classique
+
+function FaireQuelqueChose() {
+    console.log("je fais un truc");
+    console.log(5+6);
+    // alert("fonction terminée");
+}
+
+FaireQuelqueChose(); // appel de la fonction
+
+// il faut impérativement appeler une fonction pour qu'elle s'exécute
+
+//  la fonction fléchée
+
+const FaireAddition = (a, b) => {
+    console.log(a + b); // retourne la somme de a et b
+}
+
+FaireAddition(5, 6); // appel de la fonction fléchée
+FaireAddition(432, 6); // appel de la fonction fléchée
+// return permet aussi de reytourner la fonction
+
+// LA PORTÉE DES VARIABLES
+
+ function add2 (){
+    let a = 4
+    console.log(a + 2);
+
+ }
+
+ add2(a)
+
